@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  position: relative;
+  height: 100%;
+  background: url(../images/pattern-bg.png);
+  background-size: cover;
+}
+main #map {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 60%;
+  bottom: 0;
+  left: 0;
+}
+main .IP-form {
+  padding-top: 100px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+main .IP-form .head {
+  color: #fff;
+  font-size: 35px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+main .IP-form form {
+  display: flex;
+  width: 30%;
+  margin: auto;
+  border-radius: 5px;
+  overflow: hidden;
+}
+main .IP-form form input,
+main .IP-form form button {
+  padding: 15px 10px;
+  outline: none;
+  border: none;
+}
+main .IP-form form input {
+  flex: 1;
+}
+main .IP-form form input::-moz-placeholder {
+  color: hsl(0deg, 0%, 59%);
+  text-transform: capitalize;
+}
+main .IP-form form input:-ms-input-placeholder {
+  color: hsl(0deg, 0%, 59%);
+  text-transform: capitalize;
+}
+main .IP-form form input::placeholder {
+  color: hsl(0deg, 0%, 59%);
+  text-transform: capitalize;
+}
+main .IP-form form button {
+  width: 45px;
+  background-color: #000;
+  cursor: pointer;
+}
+main .Data-area {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  width: 70%;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+main .Data-area .box {
+  flex-basis: 25%;
+  padding: 20px;
+}
+main .Data-area .box:not(:last-child) {
+  border-right: 1px solid hsl(0deg, 0%, 17%);
+}
+main .Data-area .box .type {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+main .Data-area .box .data {
+  letter-spacing: 5px;
+}/*# sourceMappingURL=main.css.map */
