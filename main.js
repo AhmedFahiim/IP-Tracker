@@ -50,8 +50,7 @@ async function getApi() {
 
 actionButton.onclick = () => {
   if (inputValue.value === "") {
-    inputValue.value = "Please Enter Valid IP Address !!";
-    inputValue.style.color = "red";
+    inputValue.placeholder = "Please Enter Valid IP Address !!";
     return;
   } else getApi();
 };
