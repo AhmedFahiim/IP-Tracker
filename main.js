@@ -48,4 +48,10 @@ async function getApi() {
   marker.setPosition(loc);
 }
 
-actionButton.onclick = getApi;
+actionButton.onclick = () => {
+  if (inputValue.value === "") {
+    inputValue.value = "Please Enter Valid IP Address !!";
+    inputValue.style.color = "red";
+    return;
+  } else getApi();
+};
