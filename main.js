@@ -1,23 +1,21 @@
+//   display the map
 let map;
 let marker;
 
-//   display the map
 function initMap() {
-  let options = {
-    zoom: 8,
-    center: { lat: 37.40599, lng: -122.078514 },
-    disableDefaultUI: true,
-  };
-  map = new google.maps.Map(document.getElementById("map"), options);
+  map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 13,
+    center: { lat: 59.325, lng: 18.07 },
+  });
 
   marker = new google.maps.Marker({
-    position: { lat: 37.40599, lng: 122.078514 },
-    map: map,
+    map,
     animation: google.maps.Animation.DROP,
+    position: { lat: 59.327, lng: 18.067 },
   });
 }
-//   display the map
 
+//   display the map
 // ------------------------------------------------------
 // ------------------------------------------------------
 // ------------------------------------------------------
